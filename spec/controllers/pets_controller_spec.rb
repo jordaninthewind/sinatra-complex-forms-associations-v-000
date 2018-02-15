@@ -106,6 +106,5 @@ describe "Pets Controller" do
     #   end
     #
     #
-    # end
-    #
+    end
 end
