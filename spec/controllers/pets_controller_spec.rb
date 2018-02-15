@@ -59,7 +59,6 @@ describe "Pets Controller" do
       fill_in "pet_name", :with => "Joeseph"
       check(@owner2.id)
       click_button "Create Pet"
-      binding.pry
       @pet= Pet.last
       expect(page.current_path).to eq("/pets/#{@pet.id}")
     end
