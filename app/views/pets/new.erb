@@ -1,6 +1,6 @@
 <h1>Create a new Pet</h1>
 
-<form action="/pets" method="POST">
+<form action="/pets/:id" method="POST">
   <label>Pet Name:</label>
 
   <br></br>
@@ -11,8 +11,7 @@
 
   <label>Choose an Owner: </label><br><br>
 
-  <%Owner.all.each do |owner|%>
-
+  <%@owners.each do |owner|%>
     <p><input type="checkbox" name="pet[owner_id]" value="<%=owner.id%>"><%=owner.name%></input></p>
   <%end%>
 
