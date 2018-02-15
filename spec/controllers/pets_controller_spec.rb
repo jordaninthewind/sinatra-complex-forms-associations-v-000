@@ -104,7 +104,5 @@ describe "Pets Controller" do
     #     click_button "Update Pet"
     #     expect(Pet.last.owner.name).to eq("Samantha")
     #   end
-    #
-    #
     end
 end
