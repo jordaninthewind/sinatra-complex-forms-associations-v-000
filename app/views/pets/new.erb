@@ -11,7 +11,7 @@
 
   <label>Choose an Owner: </label><br><br>
 
-  <%@owners.each do |owner|%>
+  <%Owner.all.each do |owner|%>
 
     <p><input type="checkbox" name="pet[owner_id]" value="<%=owner.id%>"><%=owner.name%></input></p>
   <%end%>
